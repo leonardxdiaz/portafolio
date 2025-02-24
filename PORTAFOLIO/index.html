@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Creato Display;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        header {
+            font-size: 50px;
+            background-color: #000000;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        header h1 {
+            text-align: center;
+            margin-bottom: 1px;
+        }
+
+        header nav ul {
+            font-size: 15px;
+            list-style: none;
+            text-align: center;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 30px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+        background-image: url(imagenes/fondo\ nombre.png); /* Reemplaza con la URL de tu imagen */
+        background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+        background-position: center; /* Centra la imagen */
+        color: #ffffff;
+        padding: 100px 0;
+        text-align: center;
+
+}
+
+        .hero h2 {
+            font-size: 4em;
+            margin-bottom: 0.5%;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .hero .btn {
+            background-color: #fff;
+            color: #0073e6;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .projects, .contact {
+
+            padding: 60px 0;
+            text-align: center;
+        }
+
+
+        .about {
+        background-image: url(imagenes/who.png);
+        color: white;
+        padding: 60px 0;
+        text-align: center;
+        }
+
+        .about h2, .projects h2, .contact h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            display: inline-table;
+        }
+
+        .about p, .contact p {
+            font-size: 1.1em;
+            max-width: 600px;
+            margin: 0 auto 20px;
+        }
+
+        .project-grid {
+            display: inline;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-image: url(imagenes/fondo\ nombre.png);
+        }
+
+        .project-item {
+            background-color: #fff;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            text-align: center;
+        }
+
+        .project-item h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .project-item p {
+            font-size: 1em;
+        }
+
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .contact form input, .contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact form button {
+            background-color: #0073e6;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>portafolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre-mi">who?</a></li>
+                    <li><a href="#proyectos">proyectos</a></li>
+                    <li><a href="#contacto">contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="container">
+            <h2>hola, soy Leonardo</h2>
+            <p>Desarrollador Web - Frontend</p>
+            <a href="#proyectos" class="btn">Ver Mis Proyectos</a>
+        </div>
+    </section>
+
+    <section id="sobre-mi" class="about">
+        <div class="container">
+            <h2>who?</h3>
+            <p>¡Hola! Soy [Tu Nombre], un apasionado desarrollador web con experiencia en diseño y desarrollo de sitios web modernos y responsivos. Me encanta crear soluciones digitales que sean tanto funcionales como estéticamente atractivas.</p>
+        </div>
+    </section>
+
+    <section id="proyectos" class="projects">
+        <div class="container">
+            <h2>Proyectos</h2>
+
+            <div class="project-grid">
+                <div class="project-item">
+                    <h1><img src="imagenes/TIPOGRAFIA LOGO.png" alt="" sizes="10" srcset="center"></h1>
+                    <p>Aplicación movil y de escritorio para la traducción de la lengua de señas mexicana a vos y texto en timepo real</p>
+                </div>
+            </div>
+
+            <div class="project-grid">
+                <div class="project-item">
+                    <h1><img src="imagenes/TIPOGRAFIA LOGO.png" alt="" sizes="10" srcset="center"></h1>
+                    <p>Aplicación movil y de escritorio para la traducción de la lengua de señas mexicana a vos y texto en timepo real</p>
+                </div>
+            </div>
+
+
+
+
+    </section>
+
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>Si estás interesado en trabajar conmigo o simplemente quieres saludar, ¡no dudes en contactarme!</p>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Tu Nombre" required>
+                <input type="email" name="email" placeholder="Tu Email" required>
+                <textarea name="message" placeholder="Tu Mensaje" required></textarea>
+                <button type="submit" class="btn">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Leonardo Tapia Díaz</p>
+        </div>
+    </footer>
+</body>
+</html>
